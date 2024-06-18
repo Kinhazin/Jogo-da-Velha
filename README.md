@@ -6,8 +6,7 @@
 
 ## SOBRE
 
-O projeto *"Jogo da Velha"* desenvolvido pelos alunos da STADSCAS1NB atráves do [Centro Universitário Senac - Santo Amaro](https://www.sp.senac.br/centro-universitario-senac-santo-amaro) como avaliação semestral da matéria “Algoritimos e programação I”, possui a finalidade de exercitar e aprimorar a lógica de programação neste primeiro período de curso.
-
+O projeto *"Jogo da Velha"* desenvolvido pelos alunos da STADSCAS1NB do [Centro Universitário Senac - Santo Amaro](https://www.sp.senac.br/centro-universitario-senac-santo-amaro), como avaliação semestral da matéria "Algoritmos e Programação I," tem como objetivo exercitar e aprimorar a lógica de programação dos alunos no primeiro período do curso.
 O projeto inclui um documento que detalha as instruções e os requisitos mínimos que o código deve atender.
 
 Veja a documentação [aqui](https://drive.google.com/file/d/1U_zynvd9xbnVOO7ibd82D08TN8P24Hb6/view?usp=sharing)📝
