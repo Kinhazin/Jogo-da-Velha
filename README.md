@@ -12,7 +12,7 @@ O projeto inclui um documento que detalha as instruções e os requisitos mínim
 Veja os requisitos [aqui](https://drive.google.com/file/d/1U_zynvd9xbnVOO7ibd82D08TN8P24Hb6/view?usp=sharing)📝
 
 ## MODOS DE JOGO
-O jogo da velha possuí 3 modos de jogo:
+O jogo da velha possui 3 modos de jogo:
 - Jogador x Jogador
 - Jogador x Máquina (Fácil)
 - Jogador x Máquina (Difícil)
