@@ -14,7 +14,7 @@ import java.util.Random;
 public class JogadaMaquinaDificil {
 
     public static void modoDificil(char tabuleiro[][]) {
-        char simbolo = ' ';
+        char simbolo = '\0';
         int vencedor, i = 1, a = 0, b = 0, vez = 1;
         System.out.println("== MODO JOGADOR vs MAQUINA ==");
 
@@ -221,6 +221,12 @@ public class JogadaMaquinaDificil {
         } else if (tabuleiro[0][0] == 'X' && tabuleiro[2][0] == 'X' && tabuleiro[1][0] != 'O') {
             jogadas[0] = 1;
             jogadas[1] = 0;
+        }else if (tabuleiro[0][2] == 'X' && tabuleiro[2][2] == 'X' && tabuleiro[1][2] != 'O') {
+            jogadas[0] = 1;
+            jogadas[1] = 2;
+        }else if (tabuleiro[0][2] == 'X' && tabuleiro[1][2] == 'X' && tabuleiro[2][2] != 'O') {
+            jogadas[0] = 2;
+            jogadas[1] = 2;
         } else {
             jogadas[0] = 5;
             jogadas[1] = 5;
