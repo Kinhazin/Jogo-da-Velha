@@ -10,6 +10,7 @@ O projeto *"Jogo da Velha"* desenvolvido pelos alunos da STADSCAS1NB do [Centro 
 O projeto inclui um documento que detalha as instruções e os requisitos mínimos que o código deve atender.
 
 Veja os requisitos [aqui](https://drive.google.com/file/d/1U_zynvd9xbnVOO7ibd82D08TN8P24Hb6/view?usp=sharing)📝
+Veja uma demonstração do jogo [aqui](https://photos.app.goo.gl/qVQ1afq58kvbUKWF8)🎥
 
 ## MODOS DE JOGO
 O jogo da velha possui 3 modos de jogo:
