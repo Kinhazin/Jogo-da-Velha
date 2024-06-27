@@ -41,8 +41,7 @@ public class JogadaMaquinaDificil {
             } while (i <= 9 && vencedor == 0);
             if (vencedor == 0) {
                 i = 1;
-                verificaVelha(tabuleiro);
-                tabuleiro = limparTabuleiro(tabuleiro);
+                verificaVelha(tabuleiro);               
                 vez --;
                 if (vez % 2 == 0) {
                     vez = 1;
@@ -55,16 +54,14 @@ public class JogadaMaquinaDificil {
                 a = a + 1;
                 vez = 1;
                 System.out.println("\n == VITORIA DO JOGADOR == \n\n");
-                tabuleiro = limparTabuleiro(tabuleiro);
             }
             if (vencedor == 2) {
                 i = 1;
                 b = b + 1;
                 vez = 2;
                 System.out.println("\n == VITORIA DA MAQUINA ==\n\n");
-                tabuleiro = limparTabuleiro(tabuleiro);
             }
-
+            tabuleiro = limparTabuleiro(tabuleiro);
         } while (a <= 2 && b <= 2);
         System.out.println("\n\n== PLACAR FINAL ==\n\n");
         imprimePontuacaoMaquina(a, b);
