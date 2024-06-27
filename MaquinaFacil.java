@@ -17,7 +17,7 @@ import java.util.Random;
  */
 public class MaquinaFacil {
 
-    public static void modoFacil(char tabuleiro[][]) {
+    public static void modoFacil(char tabuleiro[][]) throws InterruptedException {
         char simbolo = ' ';
         int vencedor, i = 1, a = 0, b = 0, vez = 1;
         System.out.println("== MODO JOGADOR vs MAQUINA ==");
@@ -28,17 +28,17 @@ public class MaquinaFacil {
             do {
                 vencedor = 0;
                 if (vez % 2 != 0) {
-                    System.out.println("JOGADOR 1:");
+                    System.out.println("\n\nJOGADOR 1:");
                     simbolo = 'X';
                     jogadaUsuario(tabuleiro, simbolo);
-                    imprimirTabuleiro(tabuleiro);
                 }
                 if (vez % 2 == 0) {
-                    System.out.println("MAQUINA:");
-                    simbolo = 'O';
-                    jogadaMaquina(tabuleiro, simbolo);
-                    imprimirTabuleiro(tabuleiro);
+                    System.out.println("\n\nMAQUINA:");
+                    simbolo = 'O';                 
+                    jogadaMaquina(tabuleiro, simbolo);  
+                    Thread.sleep(1500);
                 }
+                imprimirTabuleiro(tabuleiro);
                 vencedor = verificaVencedor(tabuleiro);
                 vez++;
                 i++;
@@ -60,19 +60,19 @@ public class MaquinaFacil {
                 i = 1;
                 a = a + 1;
                 vez = 1;
-                System.out.println("\n == VITORIA DO JOGADOR == ");
+                System.out.println("\n\n == VITORIA DO JOGADOR == ");
                 tabuleiro = limparTabuleiro(tabuleiro);
             }
             if (vencedor == 2) {
                 i = 1;
                 b = b + 1;
                 vez = 2;
-                System.out.println("\n == VITÓRIA DA MAQUINA == ");
+                System.out.println("\n\n == VITÓRIA DA MAQUINA == ");
                 tabuleiro = limparTabuleiro(tabuleiro);
             }
 
         } while (a <= 2 && b <= 2);
-        System.out.println("== PLACAR FINAL ==");
+        System.out.println("\n\n== PLACAR FINAL ==");
         imprimePontuacaoMaquina(a, b);
 
     }
