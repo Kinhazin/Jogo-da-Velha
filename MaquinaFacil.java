@@ -47,7 +47,6 @@ public class MaquinaFacil {
                 i = 1;
                 vez --;
                 verificaVelha(tabuleiro);
-                tabuleiro = limparTabuleiro(tabuleiro);
 
                 if (vez % 2 == 0) {
                     vez = 1;
@@ -61,16 +60,14 @@ public class MaquinaFacil {
                 a = a + 1;
                 vez = 1;
                 System.out.println("\n\n == VITORIA DO JOGADOR == ");
-                tabuleiro = limparTabuleiro(tabuleiro);
             }
             if (vencedor == 2) {
                 i = 1;
                 b = b + 1;
                 vez = 2;
-                System.out.println("\n\n == VITÓRIA DA MAQUINA == ");
-                tabuleiro = limparTabuleiro(tabuleiro);
+                System.out.println("\n\n == VITÓRIA DA MAQUINA == ");        
             }
-
+            tabuleiro = limparTabuleiro(tabuleiro);
         } while (a <= 2 && b <= 2);
         System.out.println("\n\n== PLACAR FINAL ==");
         imprimePontuacaoMaquina(a, b);
