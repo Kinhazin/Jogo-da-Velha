@@ -65,7 +65,7 @@ public class JogadaMaquinaDificil {
                 tabuleiro = limparTabuleiro(tabuleiro);
             }
 
-        } while (a < 1 && b < 1);
+        } while (a <= 2 && b <= 2);
         System.out.println("\n\n== PLACAR FINAL ==\n\n");
         imprimePontuacaoMaquina(a, b);
 
